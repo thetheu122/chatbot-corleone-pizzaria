@@ -25,9 +25,9 @@ function start(client) {
             await client.sendText(message.from, andarMessage);
         }
 
-        if (message.body === 'Olá, tenho interesse na Don Corleone's Pizza' && message.isGroupMsg === false) {
+        if (message.body === `Olá, tenho interesse na Don Corleone's Pizza` && message.isGroupMsg === false) {
             await client.sendText(message.from,
-                'Olá! 😊 Bem-vindo ao Assistente Virtual do Don Corleone's Pizza! Para melhor atendê-lo, escolha uma das categorias abaixo que corresponda ao assunto que deseja abordar:');
+                `Olá! 😊 Bem-vindo ao Assistente Virtual do Don Corleone's Pizza! Para melhor atendê-lo, escolha uma das categorias abaixo que corresponda ao assunto que deseja abordar:`);
             await sendMenu();
         } else if (message.body === '1' && message.isGroupMsg === false) {
             await client.sendText(message.from, "Conheça um pouco mais da nossa história, cursos e eventos, acesse nosso site: acaonsfatima.org.br  \n\nAcesse também nossas normas de convivência: https://acaonsfatima.org.br/2022/01/22/normas-2023/ ")
